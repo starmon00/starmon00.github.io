@@ -1,0 +1,20 @@
+/*this is my style file */
+
+#header{
+	color:blue;
+}
+
+#table{
+	float: left;
+	border: black;
+	border: solid;
+	padding: 10px;
+}
+
+#footer{
+	clear;
+}
+
+.special{
+	color: blue;
+}
