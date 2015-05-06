@@ -16,4 +16,6 @@ $email_body = "Congradulations $name, you are not subscribed to Not Black Market
 $to = "$email";
 $headers = "From: $email_from \r \n";
 $headers .= "Reply-To: $email \r \n";
-mail($to,$email_subject,$email_body,$headers)
+mail($to,$email_subject,$email_body,$headers);
+
+?>

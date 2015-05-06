@@ -19,8 +19,8 @@
       
       var items = new Array();
           items[0]="<img src='img/new_arr.png' alt ='Hot Pick 1' height='600' width='1000' border='0' />";
-          items[1]="<img src='colossus.jpg' alt ='Hot Pick 1' height='600' width='1000' border='0' />"; 
-          items[2]="<img src='img/closeupgaben.jpg' alt ='Hot Pick 1' height='600' width='1000' border='0' />"; 
+          items[1]="<img src='colossus-seller.jpg' alt ='Hot Pick 1' height='600' width='1000' border='0' />"; 
+          items[2]="<img src='img/best_price.png' alt ='Hot Pick 1' height='600' width='1000' border='0' />"; 
 
       function rotate() {
           document.getElementById("placeholder").innerHTML = items[counter];
@@ -56,7 +56,7 @@
 
     <div id="menu">
       <table>
-        <tr><th> <a href="index.html">Home</a> </th><th> <a href="games.html"> Products </a><th> <th> <a href="mission.html">About Us</a></th><th> <a href="contact.htmk"> Contact Us </a></th>
+        <tr><th> <a href="index.html">Home</a> </th><th> <a href="games.html"> Products </a><th> <th> <a href="mission.html">About Us</a></th><th> <a href="contact.html"> Contact Us </a></th>
       </table>
     </div>
 
@@ -108,6 +108,12 @@
       <form id="frm1" action="mailing_list.php">
         Name: <input type="text" name="name"><br>
         Email: <input type="text" name="email"><br><br>
+        Reason: <input type="radio" name="radio" value="Feedback" checked>Feedback
+                <br>
+                <input type="radio" name="radio" value="Complaint">Complaint
+                <br>
+                <input type="radio" name="radio" value="Other">Other
+        Message:
         <input type="button" onclick="SubMit()" value="Submit">
       </form>
 

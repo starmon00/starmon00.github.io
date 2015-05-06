@@ -11,9 +11,21 @@
 </head>
 
 <body>
-  <h1>THESE ARE THE BEST GAMES OF ALL TIME</p>
-  <img src="img/mario.jpeg" alt="Mama Luigi"/>
-  <p>
+    <div id="menu">
+      <table>
+        <tr><th> <a href="index.html">Home</a> </th><th> <a href="games.html"> Products </a><th> <th> <a href="mission.html">About Us</a></th><th> <a href="contact.html"> Contact Us </a></th>
+      </table>
+    </div>	
+    <h1> If you would like to contact us about anything, please fill out this form. </h1>
+
+    <div id="footer">
+
+      <form id="feedback" action="mailing_list.php">
+        Name: <input type="text" name="name"><br>
+        Email: <input type="text" name="email"><br><br>
+        
+        <input type="button" onclick="SubMit()" value="Submit">
+      </form>
 
   </p>
 </body>
