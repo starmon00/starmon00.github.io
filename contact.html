@@ -20,10 +20,24 @@
 
     <div id="footer">
 
-      <form id="feedback" action="mailing_list.php">
+      <form id="frm1" action="mailing_list.php">
         Name: <input type="text" name="name"><br>
         Email: <input type="text" name="email"><br><br>
-        
+        Reason:
+        <br>
+        <input type="radio" name="radio" value="Feedback" checked>Feedback
+                <br>
+                <input type="radio" name="radio" value="Complaint">Complaint
+                <br>
+                <input type="radio" name="radio" value="Other">Other
+        <br>
+
+        Message:
+        <input type="text" name = "body" style="width:1000px; height:400px;">
+        <br>
+
+        To make sure you aren't a robot, check box:
+        <input type="checkbox" name="checkbox" value="check"> <br>
         <input type="button" onclick="SubMit()" value="Submit">
       </form>
 
