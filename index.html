@@ -5,50 +5,110 @@
 
   <head>
 
-    <title>BUY OUR GAMES</title>
+    <title>Not Black Market Gaming</title>
 
     <link rel="stylesheet"  type="text/css" href="style.css"/>
     <script src="script.js"></script>
+
+    <script language="JavaScript">
+
+      var delay = 5;
+      var counter = 0; 
+      var ns6 = document.getElementById&&!document.all; 
+
+      
+      var items = new Array();
+          items[0]="<img src='img/new_arr.png' alt ='Hot Pick 1' height='600' width='1000' border='0' />";
+          items[1]="<img src='colossus.jpg' alt ='Hot Pick 1' height='600' width='1000' border='0' />"; 
+          items[2]="<img src='img/closeupgaben.jpg' alt ='Hot Pick 1' height='600' width='1000' border='0' />"; 
+
+      function rotate() {
+          document.getElementById("placeholder").innerHTML = items[counter];
+          counter = (counter==items.length-1) ? 0 : counter + 1;
+          setTimeout("rotate()",delay*1000);
+      }
+
+      function rotate() {
+          if(document.layers) {
+              document.placeholderlayer.document.write(items[counter]);
+              document.placeholderlayer.document.close();
+          }
+          if(ns6)document.getElementById("placeholderdiv").innerHTML=items[counter]
+              if(document.all)
+                  placeholderdiv.innerHTML=items[counter];
+
+          counter = (counter==items.length-1) ? 0 : counter + 1;
+          setTimeout("rotate()",delay*1000);
+      }
+      window.onload=rotate;
+    </script>
+
+
   </head>
 
   <body>
+    <img src="img/logo.png" alt="logo" />
+
     <div id="header">
-      <h1>Buy Our Games!</h1>
+      <h1>Because We Care About Our Customers</h1>
+      <h1>IF YOU ARE A RECRUITER, PLEASE EXCUSE THE WEBSITE. IT IS CURRENTLY BEING USED FOR SCHOOL PROJECT. PLEASE E-MAIL FOR DETAILS.</h1>
     </div>
-    <p><strong>Mission Statement</strong>: We want you to buy our games.</p>
 
-  	<img src="img/closeupgaben.jpg" alt="gaben's face" />
+    <div id="menu">
+      <table>
+        <tr><th> <a href="index.html">Home</a> </th><th> <a href="games.html"> Products </a><th> <th> <a href="mission.html">About Us</a></th><th> <a href="contact.htmk"> Contact Us </a></th>
+      </table>
+    </div>
 
-    <ul>
-			<li class = "special">Favorite Game: Half Life 2</li>
-			<li>Best Sellers: DARK SOULS</li>
-		</ul>
-    <p>Here's a link to the top 100 games!</p>
-    <a href="games.html">CLICK THIS LINK, IT'S NOT A VIRUS</a>
+    <layer id="placeholderlayer"></layer><div id="placeholderdiv"></div>
+
+
     <div id ="table">
   		<table>
-  			<tr>
-  				<th>Game</th><th>Rank</th><th>Description</th>
-  			</tr>
+        <tr>
+          <th colspan = "4"> Top 5 Games as of 
+            <script language = "JavaScript">
+              var date = Date()
+              document.write(date)
+            </script>
+          </th>
+        </tr>
 
-  			<tr>
-  				<td>Half Life 2</td><td>11/10</td><td>Best Gaben NA</td>
-  			</tr>
+        <tr>
+            <th>Rank</th><th>Game</th><th>Score</th><th>Genre</th>
+        </tr>
 
-  			<tr>
-  				<td>Dark Souls</td><td>10/10</td><td>I cried</td>
-  			</tr>
+        <tr>
+            <td>1</td><td>Half Life 2</td><td>10/10</td><td>FPS</td>
+        </tr>
+
+        <tr>
+            <td>2</td><td>Dark Souls</td><td>10/10</td><td>RPG</td>
+        </tr>
+
+        <tr>
+            <td>3</td><td>World of Warcraft</td><td>10/10</td><td>MMORPG</td>
+        </tr>
+
+        <tr>
+            <td>4</td><td>Halo 2</td><td>10/10</td><td>FPS</td>
+        </tr>
+
+        <tr>
+            <td>5</td><td>Pokemon Blue Version</td><td>10/10</td><td>RPG</td>
+        </tr>
   		</table>
     </div>
+
     <div id="footer">
       <p>If you would like to contact us, please yell really loudly.</p>
 
       <p>Add your email and name to our mailing list!</p>
 
-      <form id="frm1" action="form_action.asp">
+      <form id="frm1" action="mailing_list.php">
         Name: <input type="text" name="name"><br>
         Email: <input type="text" name="email"><br><br>
-        <input type="button" onclick="myFunction()" value="Submit">
+        <input type="button" onclick="SubMit()" value="Submit">
       </form>
 
     <div>
