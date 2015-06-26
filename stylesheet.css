@@ -11,8 +11,19 @@ table {
 	margin-left: auto;
 	margin-right: auto;
 }
-body {
-	background-color: #ADD8E6;
+.gradient {
+
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, #0D6EA3),
+		color-stop(1, #82F5F5));
+	background-image: -o-linear-gradient(bottom, #0D6EA3 0%, #82F5F5 100%);
+	background-image: -moz-linear-gradient(bottom, #0D6EA3 0%, #82F5F5 100%);
+	background-image: -webkit-linear-gradient(bottom, #0D6EA3 0%, #82F5F5 100%);
+	background-image: -ms-linear-gradient(bottom, #0D6EA3 0%, #82F5F5 100%);
+	background-image: linear-gradient(to bottom, #0D6EA3 0%, #82F5F5 100%);
 }
 
 p {
