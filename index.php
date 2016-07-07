@@ -35,6 +35,7 @@
 			<br>
 			<br>
 			<br>
+			<td> <a href = "dc.js\web\examples\bar.html"> bar </a>
 		<div class = "links">
 	
 		</div>
@@ -49,10 +50,9 @@
 			<tr>
 				<td> <a href ="http:/trialflow.squarespace.com/"><img src ="TrialflowLogo.png" width = "200px" height = "50px"/></a> </td>
 				<td> TrialFlow Beta</td>
-				<td> <a href ="http://globalgamejam.org/2015/games/adventures-bot-y"> <img src = "ggj-robot.gif"</a> </td>
+				<td> <a href ="http://globalgamejam.org/2015/games/adventures-bot-y"> <img src = "ggj-robot.gif"></a> </td>
 				<td> <a href = ICS51Website.html> E-commerce Website (Internet Application Engineering) </a>
 			</tr>
-<<<<<<< HEAD
 
 			<tr>
 				<td></td>
@@ -62,22 +62,16 @@
 			<tr>
 				<td></td>
 				<td></td>
-<<<<<<< HEAD
 				<td><a href = "https://github.com/nclong/project-colossus"><img src = "project_colossus.jpeg" width = 200px" height = "175px"/></td>
-=======
-				<td><a href = "https://github.com/nclong/project-colossus"><img src = "Project_Colossus.png" width = 200px" height = "175px"/></td>
->>>>>>> parent of dff0932... fix name
+
 			</tr>	
 
-=======
->>>>>>> parent of 37a3cbe... Process of Fixing Website
 		</table>
 		
 
 		<p> <strong>Please excuse the mess, the website is currently still being developed.</strong> </p>
 	</body>
 	</div>
->>>>>>> dff093218582f37dc88aafaa3756f674ff7cfcd8
 
 </html>
 
